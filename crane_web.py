@@ -60,7 +60,7 @@ if submitted:
     ws.column_dimensions["B"].width = 50
 
     # 📁 파일명 생성
-    safe_name = data['작업명'].replace(" ", "_")
+    safe_name = data['부서명'].replace(" ", "_")
     filename = f"{data['작업일자']}_{safe_name}.xlsx"
     filepath = os.path.join(SAVE_FOLDER, filename)
 
